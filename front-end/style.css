@@ -176,11 +176,10 @@ header .menu {
 /* Styles for strategy page end */
 
 
-/* Styles for strategy page start */
+/* Styles for portfolio page start */
 
 .portfolio {
-    
-    background:url();
+       background:url();
 
 }
 
@@ -189,11 +188,65 @@ header .menu {
 }
 .portfolio .col-md-4{
     min-height:250px;
+
 }
 
-/* Styles for strategy page end */
+.portfolio .col-md-4 .inner {
+    border:1px solid #808287;
+    margin:10px;
+}
+
+.portfolio .firstrow{
+     padding: 25px 0;
+     border-bottom: 1px solid #808287;
+}
+
+/* Styles for portfolio page end */
 
 
+
+/* Styles for investments page start */
+
+.investments {
+       background:url();
+
+}
+
+.investments h2{
+    font-size:20px;
+}
+.investments .col-md-3{
+    min-height:250px;
+    padding:20px;
+}
+
+.investments .col-md-3 .inner {
+    border:1px solid #808287;
+    padding:10px;
+    display:table-cell;
+    height:200px;
+    width:200px;
+    font-weight:10px;
+    vertical-align:middle;
+    text-align:center;
+    
+  /*  background: rgba(255, 255, 255, 0.1);*/
+    
+}
+/*
+.investments .col-md-3 .inner:after
+{
+    content: '.';
+    visibility: hidden;
+}
+*/
+
+.investments .firstrow{
+     padding: 25px 0;
+     border-bottom: 1px solid #808287;
+}
+
+/* Styles for investments page end */
 
 
 /* Sign in form starts */
