@@ -70,14 +70,15 @@ header{
   z-index: 2;
 }
 .form-signin input[type="text"] {
+  margin-bottom: 20px;
   border-radius: 2px;
 }
 .form-signin input[type="email"] {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 2px;
 }
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 2px;
 }
 .form-signin button[type="submit"] {
