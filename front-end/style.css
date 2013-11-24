@@ -1,14 +1,53 @@
 body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #1D2D39;
-  color:#90C1DC;
+  padding-bottom: 20px;
+  background-color: #363b41;
+  color:#fff;
 }
 
+/* General container settings*/
+.container{
+  /*background:rgba(255,255,255,0.1);*/
+}
+
+.center{
+  text-align:center;
+}
+
+/* header settings */
+
+header{
+  height:225px;
+  border-bottom:1px solid #808287;
+  display: table;
+  width: 100%;
+}
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* Settings specific to home page*/
+
+.home h1{
+    padding:100px 0;
+    line-height:80px;
+    font-size:320%;
+}
+
+.home h2{
+    padding:50px 0;
+    font-size:220%;
+}
+
+.home #buttons {
+    height:200px;
+}
+
+/* Sign in form starts */
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+  max-width: 390px;
+  padding: 15px 0 30px 0;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -18,10 +57,11 @@ body {
   font-weight: normal;
 }
 .form-signin .form-control {
+    padding:10px 25px;
   position: relative;
   font-size: 16px;
-  height: auto;
-  padding: 10px;
+  height: 60px;
+  margin:0 0 10px 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,15 +70,57 @@ body {
   z-index: 2;
 }
 .form-signin input[type="text"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 2px;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 2px;
 }
+.form-signin button[type="submit"] {
+  margin: 70px 0;
+  border-radius: 2px;
+  max-height:60px;
+  max-width:210px;
+  float:right;
+  padding:0 25px;
+}
+.form-signin #loginbutton{
+  max-width:167px;
+  padding:0 53px;
+}
+
+.form-signin #forgotpass{
+  font-style:oblique;
+  font-weight:bold;
+  padding:10px 0;
+}
+
+/* all */
+::-webkit-input-placeholder {
+    font-weight:bold;
+    color:#000;
+}
+::-moz-placeholder {
+    font-weight:bold;
+    color:#000;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+    font-weight:bold;
+    color:#000;
+} /* ie */
+input:-moz-placeholder {
+    font-weight:bold;
+    color:#000;
+}
+/* Sign in form end*/
+
+
+/*Fixes and overrides */
+
 
 /* IE fixes */
 @-webkit-viewport   { width: device-width; }
@@ -46,3 +128,46 @@ body {
 @-ms-viewport       { width: device-width; }
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
+
+/* Button styles override*/
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.btn-lg {
+  padding: 0 50px;
+  font-size: 15px;
+  line-height: 1.33;
+  border-radius: 2px;
+  text-transform:uppercase;
+  font-weight:bold;
+  display:table-cell;
+  vertical-align: middle;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #363b41;
+  border-color: #fff;
+  height:60px;
+}
+
+/* Footer */
+footer {
+  height:110px;
+  border-top:1px solid #808287;
+  display: table;
+  width: 100%;
+  text-align:right;
+}
+
+footer a{
+  color:#fff;
+  font-style:italic;
+}
+footer .email{
+ display: table-cell;
+vertical-align: middle;
+}
