@@ -21,9 +21,19 @@ header{
   display: table;
   width: 100%;
 }
-.logo {
+
+header .menu{
+  float:right;
+  display:inline-block;
+}
+
+.white{
+  background-color:#fff;
+}
+header .logo {
   display: table-cell;
   vertical-align: middle;
+    float:left;
 }
 
 
