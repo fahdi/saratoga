@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<WebEditorProject>
+    <!---->
+    <ProjectInformation>
+        <ProjectName>Saratoga</ProjectName>
+        <ProjectVersion>2.0</ProjectVersion>
+        <ServerInfo ServerID="-1"></ServerInfo>
+        <S-DriveURL></S-DriveURL>
+    </ProjectInformation>
+    <!---->
+    <ProjectTreeFirstLevel>
+        <Node Type="2" LinkName="">./</Node>
+    </ProjectTreeFirstLevel>
+    <!---->
+    <ShowedFiles>
+        <ShowedFileEditor1 FirstVisibleLine="35" CursorPosition="2506">./front-end/index.html</ShowedFileEditor1>
+        <ShowedFileEditor2 FirstVisibleLine="6" CursorPosition="374">./front-end/style.css</ShowedFileEditor2>
+    </ShowedFiles>
+    <!---->
+</WebEditorProject>
