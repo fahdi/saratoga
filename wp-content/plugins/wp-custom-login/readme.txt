@@ -3,8 +3,8 @@ Contributors: Ninos Ego
 Tags: login, custom login, login page, custom page, header, footer
  
 Requires at least: 3.2.1
-Tested up to: 3.7
-Stable tag: 1.4.3
+Tested up to: 3.8
+Stable tag: 1.4.4
 
 Adding the header and footer to your login page.
 
@@ -52,6 +52,9 @@ Using the Wordpress Admin page for installing
 
 
 == Changelog ==
+
+= 1.4.4 =
+Compatible with Wordpress 3.8
 
 = 1.4.3 =
 Compatible with Wordpress 3.7
