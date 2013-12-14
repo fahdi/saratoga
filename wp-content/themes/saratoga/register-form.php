@@ -4,18 +4,19 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
+ <h2>Welcome, you can login securely below.<?php $template->the_action_template_message( 'register' ); ?></h2>
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
-	<?php $template->the_action_template_message( 'register' ); ?>
+	
 	<?php $template->the_errors(); ?>
-	<form name="registerform" id="registerform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'register' ); ?>" method="post">
+	<form class="form-signin" name="registerform" id="registerform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'register' ); ?>" method="post">
 		<p>
 			<label for="user_login<?php $template->the_instance(); ?>"><?php _e( 'Username' ); ?></label>
-			<input type="text" name="user_login" id="user_login<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'user_login' ); ?>" size="20" />
+			<input type="text" class="form-control" placeholder="USERNAME" required autofocus="" autocomplete="off" name="user_login" id="user_login<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'user_login' ); ?>" size="20" />
 		</p>
 
 		<p>
 			<label for="user_email<?php $template->the_instance(); ?>"><?php _e( 'E-mail' ); ?></label>
-			<input type="text" name="user_email" id="user_email<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'user_email' ); ?>" size="20" />
+			<input type="text" class="form-control" placeholder="YOUR EMAIL" required autofocus="" autocomplete="off" name="user_email" id="user_email<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value( 'user_email' ); ?>" size="20" />
 		</p>
 
 		<?php do_action( 'register_form' ); ?>

@@ -10,7 +10,7 @@
         endwhile;
         ?>
       
-
+<!--
 
  <h2>Please fill out the form below and we will be in touch shortly.</h2>
         <form class="form-signin">
@@ -21,6 +21,7 @@
         <button class="btn btn-lg btn-primary btn-block login-new" type="submit">REQUEST A LOGIN</button>
       </form>
       </div>
+      -->
 <?php
     get_footer();
 ?>
