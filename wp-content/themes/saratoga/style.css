@@ -13,7 +13,8 @@ body {
     padding-bottom: 20px;
     background-color: #363b41;
     color: #fff;
-    /*background:url("images/JPGs/2013-Saratoga-1-1Home.jpg");
+    /*
+    background:url("images/JPGs/2013-Saratoga-1-1Home.jpg");
     background:url("images/JPGs/2013-Saratoga-1-2Login.jpg");
   
     background:url("images/JPGs/2013-Saratoga-1-2Learnmore.jpg");
@@ -22,7 +23,10 @@ body {
   
     
     background: url("images/JPGs/2013-Saratoga-1-3About.jpg");  
-   */ 
+    background: url("images/JPGs/2013-Saratoga-1-5CaseStudies.jpg");  
+    
+   */
+    
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -40,15 +44,14 @@ h4 {
 .container { background:transparent ;
 background: rgba(255, 255, 255, 0.1); }
 */
+
 .container {
     max-width: none !important;
-  width: 986px;
+    width: 986px;
 }
-
 .center {
     text-align: center;
 }
-
 /* Settings specific toheader start*/
 
 header {
@@ -58,8 +61,7 @@ header {
 }
 .white {
     /*background-color: rgba(0, 0, 0, 0.1);*/
-    background-color:#fff;
-    
+    background-color: #fff;
 }
 header .logo {
     display: block;
@@ -132,8 +134,6 @@ header .menu {
 }
 /* Settings specific to header end*/
 
-
-
 /* Settings specific to home page*/
 
 .home h1 {
@@ -163,9 +163,9 @@ header .menu {
 .strategy h4 {
     padding: 15px 0 0 35px;
     font-family: "Proxima Nova";
-	font-size: 14px;
-	text-transform: uppercase;
-    font-weight:bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .strategy .firstrow {
     height: 263px;
@@ -182,8 +182,8 @@ header .menu {
     border-bottom: 1px solid #808287;
 }
 .strategy .secondrow .col-md-3 {
-    padding:0;
-    width:260px;
+    padding: 0;
+    width: 260px;
 }
 .strategy .secondrow .col-md-3 p {
     font-family: "adelle", serif;
@@ -193,7 +193,6 @@ header .menu {
     line-height: 43px§;
     padding: 5px 0 0 57px;
 }
-
 /* Second row and second solumn */
 
 .strategy .secondrow .col-md-8 {
@@ -210,112 +209,94 @@ header .menu {
     padding: 10px 0 10px 43px;
     margin: 0;
     font-family: "Proxima Nova";
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-    
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .strategy .secondrow .col-md-8 p {
     font-size: 16px;
     padding: 0 0 39px 43px;
     margin: 0;
-    line-height:23px;
+    line-height: 23px;
 }
-
 .strategy .thirdrow {
     border-bottom: 1px solid #808287;
-    height:255px;
+    height: 255px;
 }
 .strategy .thirdrow p {
     padding: 55px 0 0 33px;
     font-family: Adelle;
-	font-size: 24px;
-	color: #fff;
-    line-height:40px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
 }
-
 .strategy .fourthrow .col-md-8 {
-
     margin: 0;
 }
-
-
 .strategy .fourthrow .col-md-8 h2 {
-   
     margin: 0;
     font-family: "Proxima Nova";
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-    
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
-
-.strategy .fourthrow .col-md-8 .leader{
-     margin-bottom:100px;
-     width:100%;
+.strategy .fourthrow .col-md-8 .leader {
+    margin-bottom: 100px;
+    width: 100%;
 }
-
 .strategy .fourthrow .col-md-8 .leader .borderLefttop {
     border-left: 1px solid #808287;
     position: absolute;
     top: 10px;
     bottom: 53%;
-    left:44px;
+    left: 44px;
 }
-
 .strategy .fourthrow .col-md-8 .leader .borderLeftbottom {
     border-left: 1px solid #808287;
     position: absolute;
     top: 52%;
     bottom: 30px;
-    left:44px;
+    left: 44px;
 }
-
-
 .strategy .fourthrow .col-md-8 p {
     font-size: 16px;
     padding: 1px 0 20px 43px;
     margin: 0;
 }
-
-
 .strategy .fourthrow {
     padding: 40px 0;
     border-bottom: 1px solid #808287;
 }
 .strategy .fourthrow .col-md-3 {
     padding-top: 0;
-    margin:0;
+    margin: 0;
 }
 .strategy .fourthrow .col-md-3 h2 {
-    padding:0 0 0 34px;
+    padding: 0 0 0 34px;
     font-family: "Proxima Nova";
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
 }
 .strategy .fourthrow .col-md-8 {
     padding-top: 0;
-    padding-left:90px;
-  
+    padding-left: 90px;
 }
 .strategy .fourthrow .col-md-8 h2 {
     padding: 20px 0 10px 0;
     margin: 0;
     font-family: "Proxima Nova";
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .strategy .fourthrow .col-md-8 p {
     padding: 10px 0 10px 0;
     margin: 0;
     font-family: Adelle;
-	font-size: 16px;
-    line-height:31px;
-   
+    font-size: 16px;
+    line-height: 31px;
 }
 /* Styles for strategy page end */
 
@@ -376,6 +357,84 @@ header .menu {
     border-bottom: 1px solid #808287;
 }
 /* Styles for investments page end */
+
+/*Styles for case study page start*/
+
+.title .col-md-12 {
+    padding-left: 30px;
+    background: url(images/casestudies.svg) no-repeat;
+    background-size: 20px 20px;
+}
+.case_study_top {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-left: 34px;
+}
+.case_study_menu {
+    height: 43px;
+    position: relative;
+    color: #fff;
+    background: url(images/casestudies.svg) no-repeat;
+    background-size: auto 20px;
+    background-position: 33px;
+    padding-left: 70px;
+    line-height: 43px;
+    vertical-align: middle !important;
+    border-right: 1px solid #fff;
+    width:205px;
+}
+.case_study_menu_active {
+    height: 43px;
+    position: relative;
+    color: #9b9eab;
+    background: url(images/casestudies2.svg) no-repeat;
+    background-size: auto 20px;
+    background-position: 33px;
+    padding-left: 70px;
+    line-height: 43px;
+    vertical-align: middle !important;
+    background-color:#fff;
+    width:205px;
+    
+}
+.case_study_menu_active:before {
+    content: "";
+    display: block;
+    width: 0;
+    border: 10px solid #999b9f;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+}
+
+
+.case_studies .title{
+
+}
+
+.case_studies .results{
+
+}
+
+.case_studies table th{
+    border:1px solid #d0d2d3;
+    background-color:white;
+    color:#262e3a;
+    vertical-align:middle;
+    padding-left:22px;
+}
+
+.case_studies table td{
+    border:1px solid #d0d2d3;
+    color:white;
+    padding-left:22px;
+}
+
+
+
+/*Styles for case study page end*/
 
 /* Sign in form starts */
 
@@ -547,4 +606,32 @@ footer .email {
     font-weight: 400;
     font-size: 15px;
     font-weight: bold;
+}
+.top-buffer {
+    margin-top: 43px;
+}
+.top-buffer-84 {
+    margin-top: 12px;
+}
+.top-buffer-51 {
+    margin-top: 54px;
+}
+.top-buffer-57 {
+    margin: 28.5px 0 28.5px 0;
+    padding-left:0;
+}
+.top-buffer-57 a{
+   color:white;
+}
+.borderleft {
+    border-left: 1px solid #999b9f;
+}
+.borderBottom {
+    border-bottom: 1px solid #999b9f;
+}
+.clearall {
+    clear: both;
+}
+.nopadding{
+    padding:0;
 }
