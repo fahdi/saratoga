@@ -1,5 +1,8 @@
 <footer class="container">
-    <div class="email"><a href="mailto:info@saratogacapitalpartners.com">info@saratogacapitalpartners.com</a></div>
+    <div class="email row">
+    <div class="col-xs-12">
+    <a href="mailto:info@saratogacapitalpartners.com">info@saratogacapitalpartners.com</a></div>
+    </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>

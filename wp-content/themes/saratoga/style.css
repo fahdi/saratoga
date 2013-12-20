@@ -11,7 +11,7 @@ Text Domain: saratoga
 
 body {
     padding-bottom: 20px;
-    background-color: #363b41;
+    background-color: #383a41;
     color: #fff;
     /*
     background:url("images/JPGs/2013-Saratoga-1-1Home.jpg");
@@ -26,7 +26,6 @@ body {
     background: url("images/JPGs/2013-Saratoga-1-5CaseStudies.jpg");  
     
    */
-    
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -73,15 +72,22 @@ header .logo {
     height: auto;
 }
 .white .logo {
-    padding: 8px 0;
+    padding: 25px 0;
 }
 header .menu {
     float: right;
     display: block;
+    width: 630px;
+    padding-top: 25px;
 }
 .nav-pills {
-    font-size: 15px;
     height: 35px;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0b2949;
+    float: right;
 }
 .nav-pills > li {
     float: left;
@@ -89,6 +95,7 @@ header .menu {
 .nav-pills > li > a {
     border-radius: 4px;
     color: #112c48;
+    padding: 3px 10px;
 }
 .nav-pills > li + li {
     margin-left: 2px;
@@ -181,11 +188,11 @@ header .menu {
     padding: 50px 0;
     border-bottom: 1px solid #808287;
 }
-.strategy .secondrow .col-md-3 {
+.strategy .secondrow .col-xs-3 {
     padding: 0;
     width: 260px;
 }
-.strategy .secondrow .col-md-3 p {
+.strategy .secondrow .col-xs-3 p {
     font-family: "adelle", serif;
     font-style: normal;
     font-weight: 400;
@@ -193,19 +200,19 @@ header .menu {
     line-height: 43px§;
     padding: 5px 0 0 57px;
 }
-/* Second row and second solumn */
+/* Second row and second column */
 
-.strategy .secondrow .col-md-8 {
+.strategy .secondrow .col-xs-8 {
     padding: 0 0 0 44px;
     margin: 0;
 }
-.strategy .secondrow .col-md-8 .borderLeft {
+.strategy .secondrow .col-xs-8 .borderLeft {
     border-left: 1px solid #808287;
     position: absolute;
     top: 0;
     bottom: 0;
 }
-.strategy .secondrow .col-md-8 h2 {
+.strategy .secondrow .col-xs-8 h2 {
     padding: 10px 0 10px 43px;
     margin: 0;
     font-family: "Proxima Nova";
@@ -213,7 +220,7 @@ header .menu {
     font-weight: bold;
     text-transform: uppercase;
 }
-.strategy .secondrow .col-md-8 p {
+.strategy .secondrow .col-xs-8 p {
     font-size: 16px;
     padding: 0 0 39px 43px;
     margin: 0;
@@ -225,40 +232,40 @@ header .menu {
 }
 .strategy .thirdrow p {
     padding: 55px 0 0 33px;
-    font-family: Adelle;
+    font-family: "Adelle";
     font-size: 24px;
     color: #fff;
     line-height: 40px;
 }
-.strategy .fourthrow .col-md-8 {
+.strategy .fourthrow .col-xs-8 {
     margin: 0;
 }
-.strategy .fourthrow .col-md-8 h2 {
+.strategy .fourthrow .col-xs-8 h2 {
     margin: 0;
     font-family: "Proxima Nova";
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.strategy .fourthrow .col-md-8 .leader {
+.strategy .fourthrow .col-xs-8 .leader {
     margin-bottom: 100px;
     width: 100%;
 }
-.strategy .fourthrow .col-md-8 .leader .borderLefttop {
+.strategy .fourthrow .col-xs-8 .leader .borderLefttop {
     border-left: 1px solid #808287;
     position: absolute;
     top: 10px;
     bottom: 53%;
     left: 44px;
 }
-.strategy .fourthrow .col-md-8 .leader .borderLeftbottom {
+.strategy .fourthrow .col-xs-8 .leader .borderLeftbottom {
     border-left: 1px solid #808287;
     position: absolute;
     top: 52%;
     bottom: 30px;
     left: 44px;
 }
-.strategy .fourthrow .col-md-8 p {
+.strategy .fourthrow .col-xs-8 p {
     font-size: 16px;
     padding: 1px 0 20px 43px;
     margin: 0;
@@ -267,11 +274,11 @@ header .menu {
     padding: 40px 0;
     border-bottom: 1px solid #808287;
 }
-.strategy .fourthrow .col-md-3 {
+.strategy .fourthrow .col-xs-3 {
     padding-top: 0;
     margin: 0;
 }
-.strategy .fourthrow .col-md-3 h2 {
+.strategy .fourthrow .col-xs-3 h2 {
     padding: 0 0 0 34px;
     font-family: "Proxima Nova";
     font-size: 14px;
@@ -279,11 +286,11 @@ header .menu {
     text-transform: uppercase;
     color: #fff;
 }
-.strategy .fourthrow .col-md-8 {
+.strategy .fourthrow .col-xs-8 {
     padding-top: 0;
     padding-left: 90px;
 }
-.strategy .fourthrow .col-md-8 h2 {
+.strategy .fourthrow .col-xs-8 h2 {
     padding: 20px 0 10px 0;
     margin: 0;
     font-family: "Proxima Nova";
@@ -291,10 +298,10 @@ header .menu {
     font-weight: bold;
     text-transform: uppercase;
 }
-.strategy .fourthrow .col-md-8 p {
+.strategy .fourthrow .col-xs-8 p {
     padding: 10px 0 10px 0;
     margin: 0;
-    font-family: Adelle;
+    font-family: "Adelle";
     font-size: 16px;
     line-height: 31px;
 }
@@ -302,22 +309,43 @@ header .menu {
 
 /* Styles for portfolio page start */
 
-.portfolio {
-    background: url();
+.portfoliobody {
+    background-repeat: no-repeat;
+    background: url(images/portfolio_bg.jpg) no-repeat;
+    background-color: #383a41;
 }
-.portfolio h2 {
+.portfolio {} .portfolio h2 {
     font-size: 20px;
 }
-.portfolio .col-md-4 {
-    min-height: 250px;
+.portfolio .col-xs-4 {
+    min-height: 200px;
+    padding-top: 50px;
 }
-.portfolio .col-md-4 .inner {
+.portfolio .col-xs-4 .inner {
     border: 1px solid #808287;
     margin: 10px;
 }
 .portfolio .firstrow {
-    padding: 25px 0;
+    padding: 0 0 25px 0;
     border-bottom: 1px solid #808287;
+}
+.portfolio .col-xs-4 h2 {
+    font-family: "Adelle";
+    font-size: 22px;
+}
+.portfolio .col-xs-4 p {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.portfolio .col-xs-4 p a {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 /* Styles for portfolio page end */
 
@@ -329,11 +357,11 @@ header .menu {
 .investments h2 {
     font-size: 20px;
 }
-.investments .col-md-3 {
+.investments .col-xs-3 {
     min-height: 250px;
     padding: 20px;
 }
-.investments .col-md-3 .inner {
+.investments .col-xs-3 .inner {
     border: 1px solid #808287;
     padding: 10px;
     display: table-cell;
@@ -345,7 +373,7 @@ header .menu {
     /*  background: rgba(255, 255, 255, 0.1);*/
 }
 /*
-.investments .col-md-3 .inner:after
+.investments .col-xs-3 .inner:after
 {
     content: '.';
     visibility: hidden;
@@ -360,7 +388,7 @@ header .menu {
 
 /*Styles for case study page start*/
 
-.title .col-md-12 {
+.title .col-xs-12 {
     padding-left: 30px;
     background: url(images/casestudies.svg) no-repeat;
     background-size: 20px 20px;
@@ -381,7 +409,7 @@ header .menu {
     line-height: 43px;
     vertical-align: middle !important;
     border-right: 1px solid #fff;
-    width:205px;
+    width: 205px;
 }
 .case_study_menu_active {
     height: 43px;
@@ -393,9 +421,8 @@ header .menu {
     padding-left: 70px;
     line-height: 43px;
     vertical-align: middle !important;
-    background-color:#fff;
-    width:205px;
-    
+    background-color: #fff;
+    width: 205px;
 }
 .case_study_menu_active:before {
     content: "";
@@ -408,32 +435,48 @@ header .menu {
     left: 50%;
     margin-left: -10px;
 }
+.case_studies .title {
 
+} 
+.case_studies .results {
 
-.case_studies .title{
+} 
 
+.case_studies .firstrow .col-xs-9 h2 {
+    padding: 41px 0 10px 43px;
+    margin: 0;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.case_studies .firstrow .col-xs-9 h2:first-of-type {
+     padding: 10px 0 10px 43px;
+}
+.case_studies .firstrow .col-xs-9 p {
+    font-family: Adelle;
+	font-size: 16px;
+	color: #fff;
+    padding: 0 0 39px 43px;
+    margin: 0;
+    line-height: 23px;
+}
+.case_studies .firstrow .col-xs-9 .nopadding {
+    padding-bottom:0;
 }
 
-.case_studies .results{
-
+.case_studies table th {
+    border: 1px solid #d0d2d3;
+    background-color: white;
+    color: #262e3a;
+    vertical-align: middle;
+    padding-left: 22px;
 }
-
-.case_studies table th{
-    border:1px solid #d0d2d3;
-    background-color:white;
-    color:#262e3a;
-    vertical-align:middle;
-    padding-left:22px;
+.case_studies table td {
+    border: 1px solid #d0d2d3;
+    color: white;
+    padding-left: 22px;
 }
-
-.case_studies table td{
-    border:1px solid #d0d2d3;
-    color:white;
-    padding-left:22px;
-}
-
-
-
 /*Styles for case study page end*/
 
 /* Sign in form starts */
@@ -585,10 +628,13 @@ input: -moz-placeholder {
 
 footer {
     height: 110px;
-    border-top: 1px solid #808287;
     display: table;
     width: 100%;
     text-align: right;
+}
+footer .row {
+    padding: 0;
+    border-top: 1px solid #808287;
 }
 footer a {
     color: #fff;
@@ -607,6 +653,8 @@ footer .email {
     font-size: 15px;
     font-weight: bold;
 }
+/*General stuff used all over the site */
+
 .top-buffer {
     margin-top: 43px;
 }
@@ -618,10 +666,10 @@ footer .email {
 }
 .top-buffer-57 {
     margin: 28.5px 0 28.5px 0;
-    padding-left:0;
+    padding-left: 0;
 }
-.top-buffer-57 a{
-   color:white;
+.top-buffer-57 a {
+    color: white;
 }
 .borderleft {
     border-left: 1px solid #999b9f;
@@ -632,6 +680,68 @@ footer .email {
 .clearall {
     clear: both;
 }
-.nopadding{
-    padding:0;
+.nopadding {
+    padding: 0;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+    .jumbotron .container {
+        width: auto;
+    }
+    .jumbotron .logo,
+    .jumbotron .logo img {
+        width: 240px;
+    }
+    #toTop {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 150px;
+        right: 50px;
+        display: none;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+}
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
 }
