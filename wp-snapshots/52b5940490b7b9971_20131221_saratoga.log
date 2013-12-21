@@ -1,0 +1,77 @@
+******************************************************************************** 
+PACKAGE-LOG: 01:13:40 
+NOTICE: Do not post to public sites or forums 
+******************************************************************************** 
+duplicator: 0.4.6 
+wordpress: 3.8 
+php: 5.5.3 
+php sapi: apache2handler 
+server: Apache 
+browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 
+package name: 20131221_saratoga 
+php_max_time: set from=30 to=5000 
+php_max_memory: set from=40M to=5000M 
+mysql wait_timeout:5000 
+recorded table id: 2 
+******************************************************************************** 
+BUILD SQL SCRIPT: 
+******************************************************************************** 
+wp_ba (9) 
+wp_commentmeta (0) 
+wp_comments (1) 
+wp_duplicator (1) 
+wp_links (0) 
+wp_options (178) 
+wp_postmeta (169) 
+wp_posts (59) 
+wp_ps_group_relationships (0) 
+wp_ps_groups (2) 
+wp_ps_security (3) 
+wp_term_relationships (5) 
+wp_term_taxonomy (1) 
+wp_termmeta (0) 
+wp_terms (1) 
+wp_usermeta (60) 
+wp_users (4) 
+SQL CREATED: /Users/imfahd/Sites/saratoganew/wp-snapshots/52b5940490b7b9971_20131221_saratoga_database.sql 
+SQL FILE SIZE: 628.55KB 
+SQL RUNTIME: 0.0718 sec. 
+******************************************************************************** 
+BUILD ZIP PACKAGE: 
+******************************************************************************** 
+PACKAGE DIR:  /Users/imfahd/Sites/saratoganew 
+PACKAGE FILE: /Users/imfahd/Sites/saratoganew/wp-snapshots/52b5940490b7b9971_20131221_saratoga_package.zip 
+FILTER EXTENSIONS:  '' 
+FILTER DIRECTORIES: '' 
+---------------------------------------- 
+STARTING PACKAGE BUILD 
+ADDED=>SQL: /Users/imfahd/Sites/saratoganew/wp-snapshots/52b5940490b7b9971_20131221_saratoga_database.sql 
+BUILDING FILE LIST 
+FILE LIST COMPLETE: 0.2872 sec. 
+FILE LIST STATS: Dirs 337 | Files 2232 | Links 0 |  
+
+PACKAGE INFO: ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2570
+    [filename] => /Users/imfahd/Sites/saratoganew/wp-snapshots/52b5940490b7b9971_20131221_saratoga_package.zip
+    [comment] => 
+)
+ 
+CREATING PACKAGE 
+CLOSING PACKAGE RESULT: '1' 
+PACKAGE FILE SIZE: 89.26MB 
+PACKAGE RUNTIME: 10.5956 sec. 
+******************************************************************************** 
+BUILD INSTALLER FILE: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Complete [/Users/imfahd/Sites/saratoganew/wp-snapshots/52b5940490b7b9971_20131221_saratoga_installer.php] 
+******************************************************************************** 
+FILE SIZE: Zip:89.26MB | SQL:628.55KB | Installer:527.02KB 
+TOTAL PROCESS RUNTIME: 10.7158 sec. 
+DONE PROCESSING => 20131221_saratoga 01:13:51 
+******************************************************************************** 

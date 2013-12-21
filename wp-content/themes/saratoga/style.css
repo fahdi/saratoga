@@ -370,7 +370,12 @@ header .menu {
     font-weight: 10px;
     vertical-align: middle;
     text-align: center;
-    /*  background: rgba(255, 255, 255, 0.1);*/
+    /*
+    background: rgba(255, 255, 255, 0.1);
+    */
+}
+.investments .col-xs-3 .inner a{
+    color: white;
 }
 /*
 .investments .col-xs-3 .inner:after
@@ -478,6 +483,66 @@ header .menu {
     padding-left: 22px;
 }
 /*Styles for case study page end*/
+
+/*Styles for process page start*/
+
+.process .firstrow .col-xs-3 h2{
+    font-family: Adelle;
+    font-size: 24px;
+    color: #fff;
+}
+
+.process .col-xs-8 h2{
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+
+.process .col-xs-8 p{
+    font-family: Adelle;
+    font-size: 16px;
+}
+
+.process .opportunity{
+    border-left: 1px solid #d0d2d3;
+    margin: 20px;
+    padding: 10px;
+}
+
+.process .opportunities{
+    font-family: Adelle;
+    font-size: 16px;
+}
+
+.process .target_markets h2{
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.process .target_markets p{
+    font-family: Adelle;
+    font-size: 24px;
+}
+.process .reasons_aquire .col-xs-3 h2{
+    font-family: Adelle;
+    font-size: 24px;
+    color: #fff;
+}
+
+.process .reasons_aquire .col-xs-8 h2{
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*Styles for process page end*/
+
+
 
 /* Sign in form starts */
 

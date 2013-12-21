@@ -15,9 +15,25 @@
     <div class="row top-buffer-51"></div>
     <div class='row firstrow'>
         <div class="col-xs-3">
-            <?php $loop=new WP_Query( array( 'post_type'=>'case_study', 'posts_per_page' => 1 ) ); ?>
-            <?php $count=0; 
-            while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <?php 
+
+            // get_posts in same custom taxonomy
+            $postlist_args = array(
+                'posts_per_page'  => -1,
+                'orderby'         => 'menu_order title',
+                'order'           => 'ASC',
+                'post_type'       => 'case_study',
+                'category' => 'uncategorized'
+            ); 
+            $myposts = get_posts( $postlist_args );
+
+            // get ids of posts retrieved from get_posts
+            $ids = array();
+            $count=0; 
+            foreach ( $myposts as $post ) : setup_postdata( $post ); 
+            $beforeafter->saratoga_gallery($post->ID);
+            $ids[] = $post->ID;
+            ?>
             <p class="title">
                 <?php the_title() ?>
             </p>
@@ -51,40 +67,32 @@
     <div class='row top-buffer-57'>
         <div class='col-xs-12 borderBottom'></div>
     </div>
- <!-- start photos loop -->
-    <div class='row project-photos'>
-        <div class="col-xs-3">
-            <h4>Project Photos</h4>
-        </div>
-        <div class='col-xs-9 col-offset-1 borderleft'>
-            <h4>SIGNAGE</h4>
-            <div class="row">
-                <div class="col-xs-6"><span>Before</span>
-                    <br/>
-                    <?php echo $beforeafter->gallery( 'before' , $post->ID , 'file'  , false , false , 'beforeafter'); ?>
-                    <img src="images/case_studies/amber_oaks/kitchen_before.jpg" />
-                </div>
-                <div class="col-xs-6"><span>After</span>
-                    <br/>
-                    <img src="images/case_studies/amber_oaks/kitchen_after.jpg" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Show if not last set -->
-    <div class='row top-buffer-57'>
-        <div class="col-xs-3"></div>
-        <div class='col-xs-9 col-offset-1 borderBottom'></div>
-    </div>
-    <!-- Show if last -->
-    <div class='row top-buffer-57'>
-        <div class='col-xs-12 borderBottom'></div>
-    </div>
-    <!-- end loop -->
-    <?php $count++; endwhile; ?>
+
+    <?php
+
+ $count++;
+endforeach; 
+//wp_reset_postdata();
+
+ ?>
     <div class='row top-buffer-57'>
         <div class='col-xs-12 nopadding'>
-            <a href="#">NEXT CASE STUDY</a>
+            <nav class="wp-prev-next">        
+                <ul class="clearfix">     
+                    <?php
+                    // get and echo previous and next post in the same taxonomy        
+                    $thisindex = array_search($post->ID, $ids);
+                    $previd = $ids[$thisindex-1];
+                    $nextid = $ids[$thisindex+1];
+                    if ( !empty($previd) ) {
+                    echo 'sdsd<a rel="prev" href="' . get_permalink($previd). '">previous</a>';
+                    }
+                    if ( !empty($nextid) ) {
+                    echo 'sdsd<a rel="next" href="' . get_permalink($nextid). '">next</a>';
+                    }
+                    ?>                 
+                </ul>   
+            </nav>
         </div>
     </div>
 

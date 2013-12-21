@@ -56,4 +56,10 @@ function my_theme_add_editor_styles() {
 add_editor_style(array('css/bootstrap-theme.min.css','css/bootstrap.min.css'));
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
-?>
+
+add_filter('get_previous_post_where', 'my_get_post_where');
+add_filter('get_next_post_where', 'my_get_post_where');
+
+function my_get_post_where($sql) {
+    return str_replace("publish", "finished", $sql);
+}
