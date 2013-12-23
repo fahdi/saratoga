@@ -1,24 +1,23 @@
 <?php get_header(); ?>
-<div class="container strategy">
+<div class="container single_investment">
     <div class="row top-buffer-84"></div>
     <div class='row title'>
         <div class='col-xs-12'>
-            <h4>All Investments</h4>
+            <h4>CASE STUDIES</h4>
         </div>
     </div>
-    <div class="row top-buffer"></div>
-    
-    <div class="row top-buffer-51"></div>
+   
+    <div class="row top-buffer-51 borderBottom"></div>
     <div class='row firstrow'>
         <div class="col-xs-3">
             <?php 
-            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1; // setup pagination
+    $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1; // setup pagination
 
-            $loop = new WP_Query( array( 
-                'post_type' => 'investment',
-                'paged' => 1,
-                'posts_per_page' => 1) 
-            );
+    $loop = new WP_Query( array( 
+        'post_type' => 'case_study',
+        'paged' => 1,
+        'posts_per_page' => 1) 
+    );
             
             $count=0; 
             while ( $loop->have_posts() ) : $loop->the_post(); ?>

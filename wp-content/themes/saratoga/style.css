@@ -484,6 +484,54 @@ header .menu {
 }
 /*Styles for case study page end*/
 
+/*Styles for single investment post start*/
+
+.single_investment .title {
+
+} 
+.single_investment .results {
+
+} 
+
+.single_investment .firstrow .col-xs-9 h2 {
+    padding: 41px 0 10px 43px;
+    margin: 0;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.single_investment .firstrow .col-xs-9 h2:first-of-type {
+     padding: 10px 0 10px 43px;
+}
+.single_investment .firstrow .col-xs-9 p {
+    font-family: Adelle;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 0 39px 43px;
+    margin: 0;
+    line-height: 23px;
+}
+.single_investment .firstrow .col-xs-9 .nopadding {
+    padding-bottom:0;
+}
+
+.single_investment table th {
+    border: 1px solid #d0d2d3;
+    background-color: white;
+    color: #262e3a;
+    vertical-align: middle;
+    padding-left: 22px;
+}
+.single_investment table td {
+    border: 1px solid #d0d2d3;
+    color: white;
+    padding-left: 22px;
+}
+/*Styles for single investment post end*/
+
+
+
 /*Styles for process page start*/
 
 .process .firstrow .col-xs-3 h2{
