@@ -21,9 +21,12 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 
 		<?php do_action( 'register_form' ); ?>
-
+		
+		<?php 
+		/*
 		<p id="reg_passmail<?php $template->the_instance(); ?>"><?php echo apply_filters( 'tml_register_passmail_template_message', __( 'A password will be e-mailed to you.' ) ); ?></p>
-
+		*/
+		?>
 		<p class="submit">
 		<button class="btn btn-lg btn-primary btn-block login-new"  type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>">REQUEST A LOGIN</button>
 			
@@ -32,5 +35,5 @@ Theme My Login will always look in your theme's directory first, before using th
 			<input type="hidden" name="action" value="register" />
 		</p>
 	</form>
-	<?php $template->the_action_links( array( 'register' => false ) ); ?>
+	<?php //$template->the_action_links( array( 'register' => false ) ); ?>
 </div>

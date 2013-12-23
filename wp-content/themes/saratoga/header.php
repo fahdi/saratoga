@@ -11,36 +11,8 @@
     <title>
         <?php wp_title( '|', true, 'right' ); ?>
         <?php bloginfo( 'name'); ?></title>
-    <script type="text/javascript">
-        (function() {
-            var config = {
-                kitId: 'dia1ceb',
-                scriptTimeout: 3000
-            };
-            var h = document.getElementsByTagName("html")[0];
-            h.className += " wf-loading";
-            var t = setTimeout(function() {
-                h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, " ");
-                h.className += " wf-inactive"
-            }, config.scriptTimeout);
-            var tk = document.createElement("script"),
-                d = false;
-            tk.src = '//use.typekit.net/' + config.kitId + '.js';
-            tk.type = "text/javascript";
-            tk.async = "true";
-            tk.onload = tk.onreadystatechange = function() {
-                var a = this.readyState;
-                if (d || a && a != "complete" && a != "loaded") return;
-                d = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (b) {}
-            };
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(tk, s)
-        })();
-    </script>
+    <script type="text/javascript" src="//use.typekit.net/dia1ceb.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!-- Bootstrap core CSS -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
 
@@ -76,25 +48,95 @@
             </div>
             <div class="menu">
                 <ul class="nav nav-pills">
-                    <li>
-                        <a href="/investments/">INVESTMENTS</a>
-                    </li>
-                    <li class="active">
-                        <a href="/about/" class="disabled">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="/process/">PROCESS</a>
-                    </li>
-                    <li>
-                        <a href="/case_study/amber-oaks/">CASE STUDIES</a>
-                    </li>
-                    <li>
-                        <a href="/our-portfolio/">PORTFOLIO</a>
-                    </li>
-                    <li class="highlighted">
+                <?php
+                $user = wp_get_current_user();
+                if( isset( $user->roles ) && is_array( $user->roles ) ) {
+                    //check for admins
+                    if( in_array( "administrator", $user->roles ) ) {
+                        // redirect them to the default place
+                        //echo "admin";
+                        ?>
+                        
+                        <li <?php if(is_page('investments') or is_singular('investment')){?>class="active" <?php
+                        }
+                        ?>>
+                            <a <?php if(is_page('investments') or  is_singular('investment')){?>class="active" <?php
+                        }
+                        ?> href="/investments/">INVESTMENTS</a>
+                        </li>
+
+                        <li <?php if(is_page('about')){?>class="active" <?php }?>>
+                            <a href="/about/" <?php if(is_page('about')){?>class="active" <?php }?>>ABOUT</a>
+                        </li>
+                        <li <?php if(is_page('process')){?>class="active" <?php }?>>
+                            <a href="/process/" <?php if(is_page('process')){?>class="active" <?php }?>>PROCESS</a>
+                        </li>
+                         <li <?php if(is_singular('case_study')){?>class="active" <?php }?>>
+                            <a href="/case_study/amber-oaks/" <?php if(is_singular('case_study')){?>class="active" <?php }?>>CASE STUDIES</a>
+                        </li>
+                        <li  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>
+                            <a href="/our-portfolio/"  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>PORTFOLIO</a>
+                        </li>
+                        <li class="highlighted">
                         <?php 
-                        if ( is_user_logged_in() ) { echo '<a href="'.wp_logout_url( get_permalink() ). '" title="LOGOUT" class="hunderline">LOG OUT</a>'; } else { echo '<a href="'.wp_login_url( get_permalink() ). '" title="LOGIN" class="hunderline">LOGIN</a>'; } ?>
-                    </li>
+                            if ( is_user_logged_in() ) { echo '<a href="'.wp_logout_url( get_permalink() ). '" title="LOGOUT" class="hunderline">LOG OUT</a>'; } else { echo '<a href="'.wp_login_url( get_permalink() ). '" title="LOGIN" class="hunderline">LOGIN</a>'; } ?>
+                        </li>
+                        <?php
+                        } elseif( in_array( "subscriber", $user->roles ) ) {
+                        //echo "sub";
+                        ?>
+                        <li <?php if(is_page('about')){?>class="active" <?php }?>>
+                            <a href="/about/" <?php if(is_page('about')){?>class="active" <?php }?>>ABOUT</a>
+                        </li>
+                        <li <?php if(is_page('process')){?>class="active" <?php }?>>
+                            <a href="/process/" <?php if(is_page('process')){?>class="active" <?php }?>>PROCESS</a>
+                        </li>
+                        <li <?php if(is_singular('case_study')){?>class="active" <?php }?>>
+                            <a href="/case_study/amber-oaks/" <?php if(is_singular('case_study')){?>class="active" <?php }?>>CASE STUDIES</a>
+                        </li>is_singular
+                        <li  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>
+                            <a href="/our-portfolio/"  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>PORTFOLIO</a>
+                        </li>
+                        <li class="highlighted">
+                        <?php 
+                            if ( is_user_logged_in() ) { echo '<a href="'.wp_logout_url( get_permalink() ). '" title="LOGOUT" class="hunderline">LOG OUT</a>'; } else { echo '<a href="'.wp_login_url( get_permalink() ). '" title="LOGIN" class="hunderline">LOGIN</a>'; } ?>
+                        </li>
+                        <?php
+                        }elseif( in_array( "investor", $user->roles ) ) {
+                            ?>
+                            
+                        <li <?php if(is_page('investments')){?>class="active" <?php
+                        }
+                        ?>>
+                            <a <?php if(is_page('investments')){?>class="active" <?php
+                        }
+                        ?> href="/investments/">INVESTMENTS</a>
+                        </li>
+
+                        <li <?php if(is_page('about')){?>class="active" <?php }?>>
+                            <a href="/about/" <?php if(is_page('about')){?>class="active" <?php }?>>ABOUT</a>
+                        </li>
+                        <li <?php if(is_page('process')){?>class="active" <?php }?>>
+                            <a href="/process/" <?php if(is_page('process')){?>class="active" <?php }?>>PROCESS</a>
+                        </li>
+                         <li <?php if(is_singular('case_study')){?>class="active" <?php }?>>
+                            <a href="/case_study/amber-oaks/" <?php if(is_singular('case_study')){?>class="active" <?php }?>>CASE STUDIES</a>
+                        </li>
+                        <li  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>
+                            <a href="/our-portfolio/"  <?php if(is_page('our-portfolio')){?>class="active" <?php }?>>PORTFOLIO</a>
+                        </li>
+                        <li class="highlighted">
+                        <?php 
+                            if ( is_user_logged_in() ) { echo '<a href="'.wp_logout_url( get_permalink() ). '" title="LOGOUT" class="hunderline">LOG OUT</a>'; } else { echo '<a href="'.wp_login_url( get_permalink() ). '" title="LOGIN" class="hunderline">LOGIN</a>'; } ?>
+                        </li>
+                            <?php
+                        }
+                    }else {
+
+                            //  echo "No users role";
+                            // Used for debugging only
+                    }
+            ?>
                 </ul>
             </div>
         </div>

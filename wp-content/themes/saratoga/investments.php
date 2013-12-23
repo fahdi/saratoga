@@ -15,18 +15,41 @@ Template Name: Investments Page
         </div>
     <div class='row '>
             <?php
-            $loop = new WP_Query( array( 'post_type' => 'investment', 'posts_per_page' => 100 ) ); 
+            $current_user = wp_get_current_user();
+           // echo 'User ID: ' . $current_user->ID . '<br />';
+            $cid=$current_user->ID;
+            $args = array(
+    'numberposts' => -1,
+    'post_type' => 'investment',
+    'meta_query' => array(        
+        array(
+            'key' => 'users',
+            'value' => $cid,
+            'compare' => 'LIKE'
+        ),
+        
+    )
+);
+            $loop = new WP_Query( $args ); 
             $count=0;
             while ( $loop->have_posts() ) : $loop->the_post(); 
             ?>
             <!-- if first change the second class-->
             <div class='col-xs-3 col-xs-offset-1'>
             <div class="inner">
-                <h2><a href="<?php the_permalink() ?>"><? the_title() ?></a></h2>
-                
+                <h2><a href="<?php the_permalink() ?>"><? the_title() ?></a>
+                </h2>
             </div>
             </div>
             <?php 
+            /*
+            $current_user = wp_get_current_user();
+            echo 'User ID: ' . $current_user->ID . '<br />';
+            $usersss=get_field('users');
+            echo "<pre>";
+            print_r($usersss);
+            echo "</pre>"; 
+            */
             $count++;
             if($count%3==0){
             ?>
@@ -41,7 +64,7 @@ Template Name: Investments Page
             endwhile; ?>
             <!-- Do the loop for the div above and add the following close div once the number reaches 3 or multiples of three -->
         
-
+        
     </div>
     </div>
 
